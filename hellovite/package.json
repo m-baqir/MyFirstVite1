@@ -11,5 +11,8 @@
     "mocha": "^9.0.3",
     "sass": "^1.37.5",
     "vite": "^2.4.4"
+  },
+  "dependencies": {
+    "milligram": "^1.4.1"
   }
 }
