@@ -23,6 +23,25 @@
             <input type="submit" name="sub" />
         </fieldset>
     </form>
+    <h2>
+        Things wrong with this page:
+    </h2>
+    <p>
+        This form has no front-end or back-end validation. The user is free to input any sort of value and characters.
+        This essentially leaves your server and website vulnerable to injection attacks.
+    </p>
+    <p>
+        There is no authentication process. anyone can try brute force attacks. Anyone can have any sort of password and
+        username. There is no multi-factor authentication or any password recovery process.
+    </p>
+    <p>
+        The website does use HTTPS for data in transit but the user inputs are not encrypted or hashed in anyway.
+    </p>
+    <p>
+        Once a user logs in, they are free to do anything they wish. They can visit any webpage or access any file on
+        the website.
+    </p>
+
 </body>
 
 </html>
