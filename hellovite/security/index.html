@@ -14,24 +14,24 @@
 <body>
     <ul>
         <li>
-            <p>X-Frame-Options: DENY : This option prevents clickjacking. Which is basically a way to trick the user
-                into clicking on something different then intended.</p>
+            X-Frame-Options: DENY : This option prevents clickjacking. Which is basically a way to trick the user into
+            clicking on something different then intended.
         </li>
         <li>
-            <p>X-XSS-Protection: 1; mode=block. This stops the website from loading the page when it detects cross-site
-                scripting</p>
+            X-XSS-Protection: 1; mode=block. This stops the website from loading the page when it detects cross-site
+            scripting.
         </li>
         <li>
-            <p>Content-Security-Policy: default-src 'self'; this allows the admin to control resources a user is allowed
-                to load for a given page. The "self" property only allows resources from the current origin.</p>
+            Content-Security-Policy: default-src 'self'; this allows the admin to control resources a user is allowed to
+            load for a given page. The "self" property only allows resources from the current origin.
         </li>
         <li>
-            <p>X-Content-Type-Options: nosniff. is a marker used by the serve to indicate the content types that should
-                be followed.</p>
+            X-Content-Type-Options: nosniff. is a marker used by the serve to indicate the content types that should be
+            followed.
         </li>
         <li>
-            <p>Referrer-Policy: strict-origin-when-cross-origin. This policy controls how much referred information
-                should be included with requests.</p>
+            Referrer-Policy: strict-origin-when-cross-origin. This policy controls how much referred information should
+            be included with requests.
             <p>strict-origin-when-cross-origin (default)
                 Send the origin, path, and querystring when performing a same-origin request. For cross-origin requests
                 send the origin (only) when the protocol security level stays same (HTTPS→HTTPS). Don't send the Referer
@@ -39,7 +39,7 @@
                     href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy">Mozilla</a></p>
         </li>
         <li>
-            <p>Permissions-Policy: geolocation=(self), microphone=(), camera=(), fullscreen=*</p>
+            Permissions-Policy: geolocation=(self), microphone=(), camera=(), fullscreen=*
             <p>The permission policy defines a method for developers to selectively enable or disable certain browser
                 features and APIs.</p>
         </li>
