@@ -28,18 +28,25 @@
     </h2>
     <p>
         This form has no front-end or back-end validation. The user is free to input any sort of value and characters.
-        This essentially leaves your server and website vulnerable to injection attacks.
+        This essentially leaves your server and website vulnerable to injection attacks. <strong>Remedy:</strong> Have
+        both front end and back end validation. Can utilize REGEX for this. You can also black list and white list
+        certain characters.
     </p>
     <p>
         There is no authentication process. anyone can try brute force attacks. Anyone can have any sort of password and
-        username. There is no multi-factor authentication or any password recovery process.
+        username. There is no multi-factor authentication or any password recovery process. <strong>Remedy:</strong>
+        Have a certain standard for passwords. Have the user meet a certain requirement. multi-factor authentication is
+        better.
     </p>
     <p>
-        The website does use HTTPS for data in transit but the user inputs are not encrypted or hashed in anyway.
+        The website does use HTTPS for data in transit but the user inputs are not encrypted or hashed in
+        anyway.<strong>Remedy:</strong>Sensitive information needs to always be hashed or encrypted using a certain
+        standard such as SHA-256.
     </p>
     <p>
         Once a user logs in, they are free to do anything they wish. They can visit any webpage or access any file on
-        the website.
+        the website. As well as access the .git file of this website. <strong>Remedy:</strong>The server needs to be
+        configured to "Deny by default". Which means anything that is not meant to be public needs to be hidden.
     </p>
 
 </body>
